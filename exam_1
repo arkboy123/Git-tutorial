@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMz+9eVRaxsmvEJs2Vv/pvI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arkboy123/Git-tutorial/blob/master/exam_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "0ukD086mujRo",
+        "outputId": "6469748f-d86f-44e0-f9a6-b5157b8ba4fd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "자연수 어디까지 찾을까요?100\n",
+            "3과 7의 배수는 [21, 42, 63, 84]입니다.\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1_번.\n",
+        "def num_3_7( ):\n",
+        "  x =int(input(\"자연수 어디까지 찾을까요?\"))\n",
+        "  list_num = [i for i in range(1,x+1)]\n",
+        "  list_3_7=[]\n",
+        "  for i in list_num:\n",
+        "    if i % 3 ==0 and i%7==0:\n",
+        "      list_3_7.append(i)\n",
+        "  print(f'3과 7의 배수는 {list_3_7}입니다.')\n",
+        "num_3_7()"
+      ]
+    }
+  ]
+}
